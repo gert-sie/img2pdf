@@ -5,7 +5,7 @@ images = [
     for f in ["20240523_011830.jpg", "20240523_011913.jpg", "20240523_012402.jpg"]
 ]
 
-pdf_path = "/home/Bilder/bbd1.pdf"
+pdf_path = "/home/gert/Bilder/bbd1.pdf"
     
 images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
