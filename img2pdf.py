@@ -2,7 +2,7 @@ from PIL import Image  # install by > python3 -m pip install --upgrade Pillow  #
 
 images = [
     Image.open("/home/gert/Bilder/" + f)
-    for f in ["20240523_011830.jpg", "20240523_011913.jpg", "20240523_012402.jpg"]
+    for f in ["20240523_011830.jpg", "20240523_011913.jpg", "20240523_012402.jpg", "20240523_012032.jpg"]
 ]
 
 pdf_path = "/home/gert/Bilder/bbd1.pdf"
