@@ -1,7 +1,7 @@
 from PIL import Image  # install by > python3 -m pip install --upgrade Pillow  # ref. https://pillow.readthedocs.io/en/latest/installation.html#basic-installation
 
 images = [
-    Image.open("/home/Bilder" + f)
+    Image.open("/home/Bilder/" + f)
     for f in ["20240523_011830.jpg", "20240523_011913.jpg", "20240523_012402.jpg"]
 ]
 
