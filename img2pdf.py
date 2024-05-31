@@ -9,7 +9,7 @@ os_name=os.name
 window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
 images = [
     Image.open("/home/gert/Bilder/" + f)
-    for f in ["20230821_112419.jpg"]
+    for f in ["20230821_112419.jpg", "20230821_112447.jpg"]
 ]
 
 pdf_path = "/home/gert/Bilder/bilder-test.pdf"
