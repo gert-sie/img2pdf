@@ -1,11 +1,16 @@
-from PIL import Image  # install by > python3 -m pip install --upgrade Pillow  # ref. https://pillow.readthedocs.io/en/latest/installation.html#basic-installation
+from PIL import Image  
+from tkinter import ttk
 
+window = Tk()
+window.geometry("1000x600")
+os_name=os.name
+window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
 images = [
     Image.open("/home/gert/Bilder/" + f)
-    for f in ["20240523_011830.jpg", "20240523_011913.jpg", "20240523_012402.jpg", "20240523_012032.jpg"]
+    for f in ["*.jpg"]
 ]
 
-pdf_path = "/home/gert/Bilder/bilder.pdf"
+pdf_path = "/home/gert/Bilder/bilder-test.pdf"
     
 images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
