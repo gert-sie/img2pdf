@@ -1,11 +1,10 @@
 from PIL import Image
 import tkinter as tk
-from tkinter import ttk
-#from tkinter import Tk, ttk, Button, Canvas, ImageTk
+from tkinter import Tk, ttk, Button, Canvas, ImageTk
 import os
 import cv2
 
-window = tk()
+window = Tk()
 window.geometry("1000x600")
 os_name=os.name
 window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
