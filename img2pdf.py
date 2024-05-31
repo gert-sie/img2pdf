@@ -18,7 +18,7 @@ images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
 )
 canvas.pack()
-python_image = tk.PhotoImage(file='python.gif')
+python_image = Tk.PhotoImage(file='python.gif')
 image_item = canvas.create_image(
     (100, 100),
     image=python_image
