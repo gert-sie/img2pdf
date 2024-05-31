@@ -22,4 +22,5 @@ python_image = tk.PhotoImage(file='/home/gert/Bilder/20230821_112419.jpg')
 canvas.create_image(
     (100, 100),
     image=python_image
+)
 window.mainloop()
