@@ -17,13 +17,10 @@ pdf_path = "/home/gert/Bilder/bilder-test.pdf"
 images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
 )
-canvas.pack()
 python_image = tk.PhotoImage(f'/home/gert/Bilder/20230821_112419.jpg')
 image_item = canvas.create_image(
     (100, 100),
     image=python_image
 )
-label = Label(image=image_item) 
-label.image = image_item # keep a reference!
-label.pack()
+canvas.pack()
 window.mainloop()
