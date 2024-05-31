@@ -20,10 +20,17 @@ canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
 
-python_image = tk.PhotoImage(file='20230821_112419.jpg", "20230821_112447.jpg')
+python_image = tk.PhotoImage(file='/home/gert/Bilder/20230821_112419.jpg')
 canvas.create_image(
     (100, 100),
     image=python_image
 )
-
+'''# Load the image file
+im = Image.open('test_image.jpg')
+# Put the image into a canvas compatible class, and stick in an
+# arbitrary variable to the garbage collector doesn't destroy it
+canvas.image = ImageTk.PhotoImage(im)
+# Add the image to the canvas, and set the anchor to the top left / north west corner
+canvas.create_image(0, 0, image=canvas.image, anchor='nw')
+'''
 window.mainloop()
