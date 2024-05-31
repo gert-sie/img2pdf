@@ -1,6 +1,6 @@
 from PIL import Image  
 '''from tkinter import *'''
-from tkinter import Tk, Button, Canvas
+from tkinter import Tk, ttk, Button, Canvas
 import os
 
 window = Tk()
@@ -18,8 +18,8 @@ images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
 )
 canvas.pack()
-python_image = Image.open('/home/gert/Bilder/20230821_112419.jpg' + f)
-canvas.create_image(
+python_image = tk.PhotoImage(file='python.gif')
+image_item = canvas.create_image(
     (100, 100),
     image=python_image
 )
