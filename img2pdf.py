@@ -5,7 +5,7 @@ from tkinter import ttk
 import os
 import cv2
 
-window = Tk()
+window = tk()
 window.geometry("1000x600")
 os_name=os.name
 window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
@@ -20,7 +20,7 @@ images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
 )
 canvas.pack()
-python_image = Tk.PhotoImage(f'/home/gert/Bilder/20230821_112419.jpg')
+python_image = tk.PhotoImage(f'/home/gert/Bilder/20230821_112419.jpg')
 image_item = canvas.create_image(
     (100, 100),
     image=python_image
