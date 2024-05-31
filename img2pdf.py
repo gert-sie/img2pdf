@@ -20,7 +20,7 @@ canvas = Canvas(window,width = 600,height = 400,bg = '#6699ff')
 canvas.pack()
 python_image = tk.PhotoImage(f'/home/gert/Bilder/pinwheel-8829_128.gif')
 image_item = canvas.create_image(
-    (100, 100),
+    (10, 10),
     image=python_image
 )
 points = (
