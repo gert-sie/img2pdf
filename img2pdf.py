@@ -20,7 +20,7 @@ canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
 
-python_image = tk.PhotoImage(file='/home/gert/Bilder/pinwheel-8829_128.gif')
+python_image = tk.PhotoImage(file='20230821_112419.jpg", "20230821_112447.jpg')
 canvas.create_image(
     (100, 100),
     image=python_image
