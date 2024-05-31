@@ -2,7 +2,6 @@ from PIL import Image
 import tkinter as tk
 from tkinter import Tk, ttk, Button, Canvas
 import os
-import cv2
 
 window = Tk()
 window.geometry("1000x600")
@@ -24,4 +23,7 @@ image_item = canvas.create_image(
     (100, 100),
     image=python_image
 )
+label = Label(image=image_item) 
+label.image = image_item # keep a reference!
+label.pack()
 window.mainloop()
