@@ -31,7 +31,7 @@ canvas.create_image(
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
 # Put the image into a canvas compatible class, and stick in an
 # arbitrary variable to the garbage collector doesn't destroy it
-canvas.image = ImageTk.PhotoImage(im)
+canvas.image = Image.PhotoImage(im)
 # Add the image to the canvas, and set the anchor to the top left / north west corner
 canvas.create_image(0, 0, image=canvas.image, anchor='nw')
 
