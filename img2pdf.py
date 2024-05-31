@@ -23,5 +23,11 @@ image_item = canvas.create_image(
     (100, 100),
     image=python_image
 )
+points = (
+    (50, 150),
+    (200, 350),
+)
+canvas.create_oval(*points, fill='purple')
+
 
 window.mainloop()
