@@ -20,13 +20,17 @@ canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
 
+label = Label(image=images[0]) 
+label.image = photo # keep a reference!
+label.pack()
+
 '''
 python_image = tk.PhotoImage(file='/home/gert/Bilder/20230821_112419.jpg')
 canvas.create_image(
     (100, 100),
     image=python_image
 )
-'''
+
 # Load the image file
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
 # Put the image into a canvas compatible class, and stick in an
@@ -34,5 +38,5 @@ im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
 canvas.image = Image.PhotoImage(im)
 # Add the image to the canvas, and set the anchor to the top left / north west corner
 canvas.create_image(0, 0, image=canvas.image, anchor='nw')
-
+'''
 window.mainloop()
