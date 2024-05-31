@@ -20,7 +20,7 @@ canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
 
-label = window.Label(image=images[0]) 
+label = tk.Label(image=images[0]) 
 label.image = photo # keep a reference!
 label.pack()
 
