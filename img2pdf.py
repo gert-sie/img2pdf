@@ -1,6 +1,6 @@
 from PIL import Image
 import tkinter as tk
-from tkinter import Tk, ttk, Button, Canvas, ImageTk
+from tkinter import Tk, ttk, Button, Canvas
 import os
 import cv2
 
