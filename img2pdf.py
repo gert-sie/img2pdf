@@ -2,6 +2,7 @@ from PIL import Image
 '''from tkinter import *'''
 from tkinter import Tk, ttk, Button, Canvas, PhotoImage
 import os
+import cv2
 
 window = Tk()
 window.geometry("1000x600")
@@ -18,7 +19,7 @@ images[0].save(
     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
 )
 canvas.pack()
-python_image = PhotoImage(file='/home/gert/Bilder/20230821_112419.jpg')
+python_image = cv2.imread(f'/home/gert/Bilder/20230821_112419.jpg')
 image_item = canvas.create_image(
     (100, 100),
     image=python_image
