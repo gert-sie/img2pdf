@@ -23,11 +23,11 @@ image_item = canvas.create_image(
     (10, 10),
     image=python_image
 )
-points = (
-    (50, 150),
-    (200, 350),
+canvas.create_text(
+    (300, 100),
+    text="Canvas Demo",
+    fill="orange",
+    font='tkDefaeultFont 24'
 )
-canvas.create_oval(*points, fill='purple')
-
 
 window.mainloop()
