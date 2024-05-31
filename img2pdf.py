@@ -1,6 +1,7 @@
 from PIL import Image  
 from tkinter import *
 from tkinter import ttk
+import os
 
 window = Tk()
 window.geometry("1000x600")
