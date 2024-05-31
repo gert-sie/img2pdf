@@ -20,17 +20,13 @@ canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
 
-label = tk.Label(image=images[0]) 
-label.image = photo # keep a reference!
-label.pack()
-
-'''
-python_image = tk.PhotoImage(file='/home/gert/Bilder/20230821_112419.jpg')
+python_image = tk.PhotoImage(file='/home/gert/Bilder/bilder-test.pdf')
 canvas.create_image(
     (100, 100),
     image=python_image
 )
 
+'''
 # Load the image file
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
 # Put the image into a canvas compatible class, and stick in an
