@@ -23,11 +23,13 @@ image_item = canvas.create_image(
     (10, 10),
     image=python_image
 )
-canvas.create_text(
-    (300, 100),
-    text="Canvas Demo",
-    fill="orange",
-    font='tkDefaeultFont 24'
+canvas = tk.Canvas(root, width=600, height=400, bg='white')
+canvas.pack(anchor=tk.CENTER, expand=True)
+
+python_image = tk.PhotoImage(file='/home/gert/Bilder/pinwheel-8829_128.gif')
+canvas.create_image(
+    (100, 100),
+    image=python_image
 )
 
 window.mainloop()
