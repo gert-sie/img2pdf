@@ -7,7 +7,7 @@ window = Tk()
 window.geometry("1000x600")
 os_name=os.name
 window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
-def konvertieren:
+def konvertieren():
     images = [
         Image.open("/home/gert/Bilder/" + f)
         for f in ["20230821_112419.jpg", "20230821_112447.jpg"]
