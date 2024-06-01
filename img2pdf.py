@@ -28,7 +28,7 @@ canvas.create_image(
 )
 Suche_Bild_Text = "Suche Bild im Dateisystem"
 l1 = Label (window,text=Suche_Bild_Text)
-l1.place(x = 200, y = 150, width=150, height=15)
+l1.place(x = 200, y = 100, width=170, height=15)
 
 '''
 # Load the image file
