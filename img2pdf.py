@@ -36,7 +36,7 @@ def sucheingabe():
     e1.focus_set()
 def suchen():
     suchstring=bild_such_text.get
-    print suchstring
+    print (suchstring)
 
 windmühle()
 sucheingabe()
