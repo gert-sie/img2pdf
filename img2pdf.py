@@ -7,15 +7,16 @@ window = Tk()
 window.geometry("1000x600")
 os_name=os.name
 window.title(f"Bilder Konvertieren nach PDF-Dokument (Betriebssystem={os.name})")
-images = [
-    Image.open("/home/gert/Bilder/" + f)
-    for f in ["20230821_112419.jpg", "20230821_112447.jpg"]
-]
-pdf_path = "/home/gert/Bilder/bilder-test.pdf"
-    
-images[0].save(
-    pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
-)
+def konvertieren:
+    images = [
+        Image.open("/home/gert/Bilder/" + f)
+        for f in ["20230821_112419.jpg", "20230821_112447.jpg"]
+    ]
+    pdf_path = "/home/gert/Bilder/bilder-test.pdf"
+        
+    images[0].save(
+        pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
+    )
 canvas = Canvas(window,width = 600,height = 400,bg = 'white')
 #canvas.pack()
 canvas.pack(anchor=tk.CENTER, expand=True)
