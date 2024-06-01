@@ -26,9 +26,9 @@ canvas.create_image(
     (100, 100),
     image=python_image
 )
-Überschrift = "Label1"
-l1 = Label (window,text=Überschrift)
-l1.place(x = 0, y = 0, width=120, height=15)
+Suche_Bild_Text = "Suche Bild im Dateisystem"
+l1 = Label (window,text=Suche_Bild_Text)
+l1.place(x = 100, y = 0, width=120, height=15)
 
 '''
 # Load the image file
