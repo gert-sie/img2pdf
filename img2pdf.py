@@ -31,7 +31,7 @@ l1 = Label (window,text=Suche_Bild_Text)
 l1.place(x = 200, y = 100, width=180, height=15)
 bild_such_text = tk.StringVar()
 e1 = Entry(window, textvariable= bild_such_text)
-e1.place(x = 50, y = 65, width=350, height=15)
+e1.place(x = 200, y = 150, width=350, height=15)
 '''
 # Load the image file
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
