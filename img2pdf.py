@@ -17,21 +17,23 @@ def konvertieren():
     images[0].save(
         pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
     )
-canvas = Canvas(window,width = 600,height = 400,bg = 'white')
-#canvas.pack()
-canvas.pack(anchor=tk.CENTER, expand=True)
-
-python_image = tk.PhotoImage(file='/home/gert/Bilder/pinwheel-8829_128.gif')
-canvas.create_image(
-    (100, 100),
-    image=python_image
-)
-Suche_Bild_Text = "Suche Bild im Dateisystem"
-l1 = Label (window,text=Suche_Bild_Text)
-l1.place(x = 200, y = 100, width=180, height=15)
-bild_such_text = tk.StringVar()
-e1 = Entry(window, textvariable= bild_such_text)
-e1.place(x = 200, y = 110, width=350, height=15)
+def windmühle():
+    canvas = Canvas(window,width = 600,height = 400,bg = 'white')
+    canvas.pack(anchor=tk.CENTER, expand=True)
+    
+    python_image = tk.PhotoImage(file='/home/gert/Bilder/pinwheel-8829_128.gif')
+    canvas.create_image(
+        (100, 100),
+        image=python_image
+    )
+def sucheingabe():
+    Suche_Bild_Text = "Suche Bild im Dateisystem"
+    l1 = Label (window,text=Suche_Bild_Text)
+    l1.place(x = 200, y = 100, width=180, height=15)
+    bild_such_text = tk.StringVar()
+    e1 = Entry(window, textvariable= bild_such_text)
+    e1.place(x = 200, y = 110, width=350, height=15)
+sucheingabe()
 '''
 # Load the image file
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
