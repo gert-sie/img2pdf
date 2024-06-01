@@ -1,6 +1,6 @@
 from PIL import Image
 import tkinter as tk
-from tkinter import Tk, ttk, Button, Canvas, Label
+from tkinter import Tk, ttk, Button, Canvas, Label, Entry
 import os
 
 window = Tk()
