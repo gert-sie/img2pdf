@@ -34,8 +34,13 @@ def sucheingabe():
     e1 = Entry(window, textvariable= bild_such_text)
     e1.place(x = 200, y = 115, width=250, height=20)
     e1.focus_set()
+def suchen():
+    suchstring=bild_such_text.get
+    print suchstring
+
 windmühle()
 sucheingabe()
+suchen()
 '''
 # Load the image file
 im = Image.open('/home/gert/Bilder/20230821_112419.jpg')
