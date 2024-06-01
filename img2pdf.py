@@ -30,13 +30,13 @@ def sucheingabe():
     Suche_Bild_Text = "Suche Bild im Dateisystem"
     l1 = Label (window,text=Suche_Bild_Text)
     l1.place(x = 200, y = 100, width=180, height=15)
+    bildsuche=bild_such_text.get()
     bild_such_text = tk.StringVar()
     e1 = Entry(window, textvariable= bild_such_text)
     e1.place(x = 200, y = 115, width=250, height=20)
     e1.focus_set()
-    suchstring=bild_such_text.get()
-    print (suchstring)
-
+    bildsuche=bild_such_text.get()
+    print (bildsuche)
 windmühle()
 sucheingabe()
 '''
