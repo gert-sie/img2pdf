@@ -33,6 +33,7 @@ def sucheingabe():
     bild_such_text = tk.StringVar()
     e1 = Entry(window, textvariable= bild_such_text)
     e1.place(x = 200, y = 115, width=250, height=20)
+    e1.focus_set()
 windmühle()
 sucheingabe()
 '''
