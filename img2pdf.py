@@ -27,18 +27,18 @@ def windmühle():
         image=python_image
     )
 def sucheingabe():
+    e1 = Entry(window, textvariable= bild_such_text)
+    e1.place(x = 200, y = 115, width=250, height=20)
+    e1.focus_set()
     bildsuche=bild_such_text.get()
+    b01 =Button(window, text= "Suche: vorher Titel\noder Autor wählen", width=14, command=sucheingabe)
+    b01.place(x = 220, y = 120, width=130, height=40)
     Suche_Bild_Text = "Suche Bild im Dateisystem"
     l1 = Label (window,text=bildsuche)
     l1.place(x = 200, y = 100, width=180, height=15)
     bild_such_text = tk.StringVar()
-    e1 = Entry(window, textvariable= bild_such_text)
-    e1.place(x = 200, y = 115, width=250, height=20)
-    e1.focus_set()
     print (bildsuche)
 windmühle()
-b01 =Button(window, text= "Suche: vorher Titel\noder Autor wählen", width=14, command=sucheingabe)
-b01.place(x = 220, y = 120, width=130, height=40)
 
 sucheingabe()
 '''
