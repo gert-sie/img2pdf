@@ -38,7 +38,7 @@ def sucheingabe():
     bild_such_text = tk.StringVar()
     print (bildsuche)
 windmühle()
-bildsuche=""
+bildsuche=StringVar()
 l1 = Label (window,text=bildsuche)
 l1.place(x = 200, y = 140, width=180, height=15)
 b01 =Button(window, text= "Suche: vorher Titel\noder Autor wählen", width=14, command=sucheingabe)
