@@ -33,12 +33,14 @@ def sucheingabe():
     bildsuche=bild_such_text.get()
     Suche_Bild_Text = "Suche Bild im Dateisystem"
     l1 = Label (window,text=bildsuche)
-    l1.place(x = 200, y = 100, width=180, height=15)
+    l1.place(x = 200, y = 140, width=180, height=15)
     bild_such_text = tk.StringVar()
     print (bildsuche)
 windmühle()
+l1 = Label (window,text=bildsuche)
+l1.place(x = 200, y = 140, width=180, height=15)
 b01 =Button(window, text= "Suche: vorher Titel\noder Autor wählen", width=14, command=sucheingabe)
-b01.place(x = 220, y = 120, width=130, height=40)
+b01.place(x = 200, y = 100, width=130, height=40)
 
 #sucheingabe()
 '''
