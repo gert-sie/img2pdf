@@ -38,6 +38,9 @@ def sucheingabe():
     bildsuche=bild_such_text.get()
     print (bildsuche)
 windmühle()
+b01 =Button(window, text= "Suche: vorher Titel\noder Autor wählen", width=14, command=sucheingabe)
+b01.place(x = 220, y = 120, width=130, height=40)
+
 sucheingabe()
 '''
 # Load the image file
